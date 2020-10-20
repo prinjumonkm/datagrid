@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<style>
+
+nav{
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: #888;
+}
+
+
+main{
+  background: #CCC;
+  padding: 1rem;
+}
+
+#content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* This is what we are focused on */
+.table-wrapper{
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+
+.table-wrapper th{
+    position: sticky;
+    top: 0;
+}
+
+/* A bit more styling to make it look better */
+.table-wrapper{
+  background: rgb(255, 255, 255);
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th{
+    background: #DDD;
+}
+
+td,th{
+  padding: 10px;
+  text-align: center;
+}
+</style>
+    </head>
+<body>
+<script type="module"  src="app/index.js">
+</script>
+<nav>
+    <button >London</button>
+    <button >Paris</button>
+</nav>
+<main>
+  <div id="content">
+    <div class="table-wrapper" id='tableholder'>
+    </div>
+  </div>
+</main>
+</body>
+</html>
